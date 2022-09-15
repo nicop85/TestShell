@@ -7,13 +7,8 @@ public partial class LoginPage : ContentPage
 		InitializeComponent();
 	}
 
-	protected override void OnAppearing()
-	{
-		base.OnAppearing();
-	}
-
 	private void OnLoginClicked(object sender, EventArgs e)
 	{
-        MessagingCenter.Send<object>(this, App.EVENT_LOGGED_IN);
+        MessagingCenter.Send<object>(this, HomePage.EVENT_LOGGED_IN);
 	}
 }

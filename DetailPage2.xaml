@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TestShell.DetailPage"
-             Title="Details 1">
+             x:Class="TestShell.DetailPage2"
+             Title="Details 2">
 
     <ScrollView>
         <VerticalStackLayout
@@ -30,8 +30,10 @@
                 HorizontalOptions="Center" />
 
             <Button
-                Text="Next page"
-                Clicked="OnGoToNextPage"
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
         </VerticalStackLayout>
